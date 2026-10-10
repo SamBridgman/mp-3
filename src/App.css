@@ -1,0 +1,345 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Kumbh+Sans:wght,YOPQ@100..900,300&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Global styles and variables */
+:root {
+  --primary-color: #006aff;
+  --secondary-color: #666;
+  --header-color:#262626;
+  --primary-color-text:#262626;
+  --secondary-background:#F9FAFB;
+}
+
+html {
+  background: var(--secondary-background);
+}
+
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: var(--secondary-background);
+}
+
+h1, h2 {
+  font-family: 'Kumbh Sans', sans-serif;
+  margin-top: 0;
+}
+h1 {
+  color: var(--header-color);
+  font-size: calc(20px + 1vw);
+}
+h2 {
+  color: var(--header-color);
+  font-size: calc(20px + 1vw);
+}
+
+h4 {
+  font-family: 'Kumbh Sans', sans-serif;
+  color: var(--header-color);
+  font-size: calc(16px + 0.4vw);
+}
+
+p {
+  font-family: 'Kumbh Sans', sans-serif;
+  color:var(--secondary-color);
+  font-weight:400;
+  max-width: 600px;
+  font-size: calc(14px + 0.2vw);
+}
+
+/* Shared layout */
+header {
+  background-color: var(--secondary-background);
+  padding: 30px;
+  text-align: left;
+}
+
+a {
+  color: var(--primary-color-text);
+  text-decoration: none;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight:500;
+  font-size: calc(14px + 0.2vw);
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+
+#wrapper {
+  display: flex;
+}
+li {
+  list-style: none;
+  padding: 10px 0px 10px 0px;
+}
+
+nav {
+  background-color: var(--secondary-background);
+  max-width: 30%;
+  width: 30%;
+  padding-left: 30px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 30px 30px 30px 0;
+}
+
+main {
+  border-radius: 20px;
+  padding:20px;
+  background-color: #FFFFFF;
+  max-width:70%;
+  width:70%;
+  height: 100vh;
+}
+#main-title {
+  padding-bottom:30px;
+  justify-content: center;
+  text-align: center;
+}
+
+footer {
+  background-color: var(--secondary-background);
+  padding:40px;
+}
+
+
+
+/* Home */
+#container-row {
+  display: flex;
+  width: 100%;
+
+  align-items: center;
+  gap: clamp(20px, 3vw, 40px);
+}
+#container-row p {
+  flex: 1;
+  min-width: 0;
+  margin: auto;
+  font-size: calc(14px + 0.2vw);
+}
+
+#container-row img {
+  display: block;
+  width: 45%;
+  max-width: 400px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 12px;
+}
+
+/* Shared resume cards and lists */
+.resume-card,
+.achievement-container,
+.education-container,
+.employment-container,
+.project-container {
+  background-color: var(--secondary-background);
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid #000;
+}
+
+.resume-card h4,
+.achievement-container h4,
+.education-container h4,
+.employment-container h4,
+.project-container h4 {
+  font-size: calc(16px + 0.4vw);
+}
+
+.resume-card p,
+.achievement-container p,
+.education-container p,
+.employment-container p,
+.project-container p {
+  font-size: calc(14px + 0.2vw);
+}
+
+.resume-list,
+#achievements-row,
+#education-row,
+#employment-row,
+#projects-row {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* References */
+#references-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--secondary-background);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid #000;
+}
+
+#references-table th,
+#references-table td {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: calc(14px + 0.2vw);
+  text-align: left;
+  padding: 16px;
+  border-bottom: 1px solid #000;
+}
+
+#references-table th {
+  color: var(--header-color);
+  font-weight: 600;
+}
+
+#references-table td {
+  color: var(--secondary-color);
+}
+
+#references-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Calculator */
+#calculator-container {
+  background-color: var(--secondary-background);
+  padding:20px;
+  border-radius: 12px;
+  border: 2px solid #000;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#calculator-inputs {
+  display: flex;
+  gap: 20px;
+}
+
+.calculator-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+#calculator-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#calculator-container label {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: calc(14px + 0.2vw);
+  color: var(--header-color);
+}
+
+#calculator-container input,
+#calculator-container button {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: calc(14px + 0.2vw);
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 2px solid #000;
+  background-color: #FFFFFF;
+  color: var(--header-color);
+}
+
+#calculator-container input {
+  width: 100%;
+}
+
+#calculator-container button:hover {
+  color: var(--primary-color);
+}
+
+#output {
+  font-size: calc(16px + 0.4vw);
+}
+
+
+/* Responsive layouts */
+@media screen and (max-width: 1000px) {
+  #container-row {
+    flex-direction: column;
+  }
+  #container-row img {
+    width: 80%;
+    max-width: 320px;
+  }
+  main {
+    max-width: 100%;
+    width: 100%;
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #container-row {
+    flex-direction: column;
+  }
+  #container-row img {
+    max-width: 240px;
+  }
+  nav {
+    width:100%;
+    max-width: 100%;
+    padding-left: 0;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 0;
+  }
+  nav ul li {
+    background-color: white;
+    margin: 0;
+    padding: 8px 12px;
+    font-size: calc(12px + 0.2vw);
+    border-radius:10px;
+    white-space: nowrap;
+  }
+  nav ul li a {
+    font-size: calc(12px + 0.2vw);
+  }
+  #wrapper{
+    flex-direction: column;
+  }
+  header {
+    text-align: center;
+  }
+  main{
+    width: 100%;
+    max-width: 100%;
+  }
+  footer {
+    padding:20px;
+  }
+
+
+}
+
+@media screen and (max-width: 750px) {
+  #calculator-inputs {
+    flex-direction: column;
+  }
+}
