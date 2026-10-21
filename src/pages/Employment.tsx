@@ -2,6 +2,8 @@ import ResumeCard from '../components/ResumeCard';
 export default function Employment() {
     return (
         <>
+            <title>Resume | Employment</title>
+
             <h2 id="main-title">Employment</h2>
 
             <div id = "employment-row">

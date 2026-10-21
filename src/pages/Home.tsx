@@ -4,6 +4,9 @@ import {Link} from "react-router";
 export default function Home() {
     return (
         <>
+            <title>Resume | Home</title>
+
+
             <h2 id="main-title">Home</h2>
 
             <div id="container-row">

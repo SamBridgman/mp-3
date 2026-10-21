@@ -2,6 +2,7 @@ import ResumeCard from '../components/ResumeCard';
 export default function Achievements() {
     return (
         <>
+            <title>Resume | Achievements</title>
             <h2 id="main-title">Achievements</h2>
 
             <div id = "achievements-row">

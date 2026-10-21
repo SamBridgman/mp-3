@@ -20,7 +20,7 @@ export default function Root() {
 
                 <Main>
                     <Routes>
-                        <Route path="/" element={<Home />} />
+                        <Route path="/" element={<Home />}  />
                         <Route path="/education" element={<Education />} />
                         <Route path="/employment" element={<Employment />} />
                         <Route path="/projects" element={<Projects />} />

@@ -1,6 +1,8 @@
 export default function References() {
     return (
         <>
+            <title>Resume | References</title>
+
             <h2 id="main-title">References</h2>
 
             <table id="references-table">

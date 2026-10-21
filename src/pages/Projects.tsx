@@ -4,6 +4,8 @@ import Calculator from '../components/Calculator';
 export default function Projects() {
     return (
         <>
+            <title>Resume | Projects</title>
+
             <h2 id="main-title">Projects</h2>
 
             <div id = "projects-row">

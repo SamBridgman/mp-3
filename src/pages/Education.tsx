@@ -2,6 +2,8 @@ import ResumeCard from '../components/ResumeCard';
 export default function Education() {
     return (
         <>
+            <title>Resume | Education</title>
+
             <h2 id="main-title">Education</h2>
 
             <div id = "education-row">
